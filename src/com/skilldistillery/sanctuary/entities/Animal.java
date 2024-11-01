@@ -11,17 +11,10 @@ public class Animal {
 		this.name = name;
 	}
 
-	public void makeNoise(String animal) {
-		System.out.println();
+	public void makeNoise() {
 	}
 	
 	public void eat(int amount) {
 	}
-
-
-
-	// TODO: add, commit, and push to GitHub
-
-	// TODO: create animal subclasses (
 
 }
