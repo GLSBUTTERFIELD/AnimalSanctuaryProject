@@ -11,7 +11,7 @@ public class Wolf extends Animal {
 	@Override
 	public void eat(int amount) {
 		makeNoise();
-		System.out.print("I love eating these " + amount + " pounds of meat.\n\n");
+		System.out.print("I love eating these " + amount + " pounds of meat.\n----------------\n");
 
 	}
 

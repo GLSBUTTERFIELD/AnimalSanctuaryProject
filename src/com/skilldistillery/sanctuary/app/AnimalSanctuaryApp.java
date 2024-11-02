@@ -29,16 +29,23 @@ public class AnimalSanctuaryApp {
 				System.out.println("The sanctuary currently includes: ");
 				sanctuary.listAnimals();
 				break;
+			
 			case "2":
+				int animalCount =0;
 				displayAnimalsToAdd();
 				String animalChoice = kb.nextLine();
+				
+				if (animalCount ==5) {
+					System.out.println("Sorry, the sanctuary is full.");
+				}
 
 				if (animalChoice.equals("1")) {
 					Cow c = new Cow();
 					System.out.println("What is the cow's name? ");
 					String animalName = kb.nextLine();
-					c.setName(animalName);
+					c.setName(animalName + " the cow");
 					sanctuary.addAnimal(c);
+					animalCount +=1;
 					break;
 				}
 
@@ -46,8 +53,9 @@ public class AnimalSanctuaryApp {
 					Parrot p = new Parrot();
 					System.out.println("What is the parrot's name? ");
 					String animalName = kb.nextLine();
-					p.setName(animalName);
+					p.setName(animalName + " the parrot");
 					sanctuary.addAnimal(p);
+					animalCount+=1;
 					break;
 				}
 
@@ -55,31 +63,34 @@ public class AnimalSanctuaryApp {
 					Wolf w = new Wolf();
 					System.out.println("What is the wolf's name? ");
 					String animalName = kb.nextLine();
-					w.setName(animalName);
+					w.setName(animalName + " the wolf");
 					sanctuary.addAnimal(w);
+					animalCount+=1;
 					break;
-				} 
-				
+				}
+
 				else {
 					System.out.println("Invalid choice. Please submit a new response.");
 					break;
 				}
+				
 			case "3":
+				System.out.println("\nThe attendant will now start their rounds.\n");
 				sanctuary.startAttendantRounds();
 				break;
-			
+
 			case "4":
 				System.out.println("Thanks for vising the Skill Distillery Sanctuary. \nGoodbye.");
 				keepGoing = false;
 				break;
-			
+
 			default:
 				System.out.println("Invalid input.");
 			}
 		} while (keepGoing);
-
+		kb.close();
 	}
-	// TODO instantiate new sanctuary & new attendant
+
 	public void displayMenu() {
 		System.out.println("********************************************");
 		System.out.println("*         Please select an option:         *");

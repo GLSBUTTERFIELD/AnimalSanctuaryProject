@@ -11,7 +11,7 @@ public class Parrot extends Animal {
 	@Override
 	public void eat(int amount) {
 		makeNoise();
-		System.out.print("Thank you for the " + amount + " crackers.\n\n");
+		System.out.print("Thank you for the " + amount + " crackers.\n----------------\n");
 
 	}
 

@@ -34,6 +34,7 @@ public class Sanctuary {
 	}
 
 	public void startAttendantRounds() {
+		System.out.println("La de da, I love feeding my Animal Friends ...\n");
 		attendant.makeRounds(animalsInSanctuary);
 	}
 }
