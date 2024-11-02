@@ -18,7 +18,8 @@ The animals are very happy when they are fed. They show appreciation by making t
 	<li>do while loops</li>
 	<li>switches</li></ul>
 <li>Eclipse</li><ul>
-<li>keyboard shortcuts</li></ul>
+<li>keyboard shortcuts</li>
+<li>source menu commands</li></ul>
 <li>UML diagrams</li>
 <li>Sublime</li>
 <li>Git/GitHub</li>

@@ -6,7 +6,7 @@ public class Attendant {
 		for (int i=0;i < animals.length; i++) {
 			if (animals[i]!=null) {
 				int amountToFeed = (int)((Math.random()*10) +1);
-				System.out.println("Enclosure " + (i+1) + "\nI will feed " + animals[i].getName() + " " + amountToFeed + " foods");
+				System.out.println("Enclosure " + (i+1) + ":\nI will feed " + animals[i].getName() + " " + amountToFeed + " foods");
 				animals[i].eat(amountToFeed);
 			}
 			
