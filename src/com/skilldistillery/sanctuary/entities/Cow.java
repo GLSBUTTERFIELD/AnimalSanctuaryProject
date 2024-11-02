@@ -1,7 +1,7 @@
 package com.skilldistillery.sanctuary.entities;
 
 public class Cow extends Animal {
-	private static String noise = "MoOOoo.";
+	private static String noise = "MoOOoo. ";
 
 	@Override
 	public void makeNoise() {
@@ -11,7 +11,7 @@ public class Cow extends Animal {
 	@Override
 	public void eat(int amount) {
 	makeNoise();
-	System.out.print(" I love eating " + amount + " bales of hay.");
+	System.out.print("These " + amount + " bales of hay are so delicious.");
 	}
 	
 	
