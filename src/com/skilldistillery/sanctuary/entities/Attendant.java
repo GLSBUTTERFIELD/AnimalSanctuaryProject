@@ -6,16 +6,16 @@ public class Attendant {
 		for (int i=0;i < animals.length; i++) {
 			if (animals[i]!=null) {
 				int amountToFeed = 10;
-				System.out.println("I will feed " + animals[i].getName() + amountToFeed + " foods");
+				System.out.println("Enclosure " + (i+1) + ": I will feed " + animals[i].getName() + " " + amountToFeed + " foods");
 				animals[i].eat(amountToFeed);
 			}
 			
 			else {
-				System.out.println("This enclosure is empty, on to the next one.");
+				System.out.println("Enclosure " + (i+1) + ": This enclosure is empty, on to the next one.");
 			}
 			
 		}
-		System.out.println("Everyone's fed now, I can take a break.");	
+		System.out.println("\nEveryone's fed now, I can take a break.\n\n");	
 	}
 
 }

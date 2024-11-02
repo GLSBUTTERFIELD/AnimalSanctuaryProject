@@ -11,7 +11,7 @@ public class Cow extends Animal {
 	@Override
 	public void eat(int amount) {
 	makeNoise();
-	System.out.print("These " + amount + " bales of hay are so delicious.");
+	System.out.print("These " + amount + " bales of hay are so delicious.\n\n");
 	}
 	
 	

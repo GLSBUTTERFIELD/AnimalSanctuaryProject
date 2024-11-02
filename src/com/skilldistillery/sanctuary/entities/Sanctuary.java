@@ -12,11 +12,11 @@ public class Sanctuary {
 	public void listAnimals() {
 		for (int i = 0; i < animalsInSanctuary.length; i++) {
 			if (animalsInSanctuary[i] != null) {
-				System.out.println(animalsInSanctuary[i].getName());
+				System.out.println("Enclosure " + (i+1) + ": "+  animalsInSanctuary[i].getName());
 			}
 
 			else {
-				System.out.println("This enclosure is empty.");
+				System.out.println("Enclosure " + (i+1) + ": This enclosure is empty.");
 			}
 		}
 	}
