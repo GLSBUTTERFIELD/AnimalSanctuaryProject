@@ -31,7 +31,11 @@ public class AnimalSanctuaryApp {
 				break;
 			
 			case "2":
-				int animalCount =0;
+				if(sanctuary.isFull()) {
+					System.out.println("\nSorry, the sanctuary is full.");
+					break;
+				}
+				
 				displayAnimalsToAdd();
 				String animalChoice = kb.nextLine();
 				if (animalChoice.equals("1")) {
@@ -40,7 +44,6 @@ public class AnimalSanctuaryApp {
 					String animalName = kb.nextLine();
 					c.setName(animalName + " the cow");
 					sanctuary.addAnimal(c);
-					animalCount +=1;
 					break;
 				}
 
@@ -50,7 +53,6 @@ public class AnimalSanctuaryApp {
 					String animalName = kb.nextLine();
 					p.setName(animalName + " the parrot");
 					sanctuary.addAnimal(p);
-					animalCount+=1;
 					break;
 				}
 
@@ -60,7 +62,6 @@ public class AnimalSanctuaryApp {
 					String animalName = kb.nextLine();
 					w.setName(animalName + " the wolf");
 					sanctuary.addAnimal(w);
-					animalCount+=1;
 					break;
 				}
 
