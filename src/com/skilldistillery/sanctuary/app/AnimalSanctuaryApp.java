@@ -26,7 +26,7 @@ public class AnimalSanctuaryApp {
 			String userInput = kb.nextLine();
 			switch (userInput) {
 			case "1":
-				System.out.println("The sanctuary currently includes: ");
+				System.out.println("\nThe sanctuary currently includes: ");
 				sanctuary.listAnimals();
 				break;
 			
@@ -34,14 +34,9 @@ public class AnimalSanctuaryApp {
 				int animalCount =0;
 				displayAnimalsToAdd();
 				String animalChoice = kb.nextLine();
-				
-				if (animalCount ==5) {
-					System.out.println("Sorry, the sanctuary is full.");
-				}
-
 				if (animalChoice.equals("1")) {
 					Cow c = new Cow();
-					System.out.println("What is the cow's name? ");
+					System.out.println("\nWhat is the cow's name? ");
 					String animalName = kb.nextLine();
 					c.setName(animalName + " the cow");
 					sanctuary.addAnimal(c);
@@ -51,7 +46,7 @@ public class AnimalSanctuaryApp {
 
 				else if (animalChoice.equals("2")) {
 					Parrot p = new Parrot();
-					System.out.println("What is the parrot's name? ");
+					System.out.println("\nWhat is the parrot's name? ");
 					String animalName = kb.nextLine();
 					p.setName(animalName + " the parrot");
 					sanctuary.addAnimal(p);
@@ -61,7 +56,7 @@ public class AnimalSanctuaryApp {
 
 				else if (animalChoice.equals("3")) {
 					Wolf w = new Wolf();
-					System.out.println("What is the wolf's name? ");
+					System.out.println("\nWhat is the wolf's name? ");
 					String animalName = kb.nextLine();
 					w.setName(animalName + " the wolf");
 					sanctuary.addAnimal(w);
@@ -70,39 +65,39 @@ public class AnimalSanctuaryApp {
 				}
 
 				else {
-					System.out.println("Invalid choice. Please submit a new response.");
+					System.out.println("\nInvalid choice. Please submit a new response.");
 					break;
 				}
 				
 			case "3":
-				System.out.println("\nThe attendant will now start their rounds.\n");
+				System.out.println("\nThe attendant will now start their rounds.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 				sanctuary.startAttendantRounds();
 				break;
 
 			case "4":
-				System.out.println("Thanks for vising the Skill Distillery Sanctuary. \nGoodbye.");
+				System.out.println("\nThanks for vising the Skill Distillery Sanctuary.\nWe hope to see you again soon!");
 				keepGoing = false;
 				break;
 
 			default:
-				System.out.println("Invalid input.");
+				System.out.println("\nInvalid input.");
 			}
 		} while (keepGoing);
 		kb.close();
 	}
 
 	public void displayMenu() {
-		System.out.println("********************************************");
-		System.out.println("*         Please select an option:         *");
-		System.out.println("* 1: See who's currently in the sanctuary  *");
-		System.out.println("* 2: Add a new member to the sanctuary     *");
-		System.out.println("* 3: Start the attendant's feeding round   *");
-		System.out.println("* 4: Exit the menu                         *");
-		System.out.println("********************************************");
+		System.out.println("............................................");
+		System.out.println(".         Please select an option:         .");
+		System.out.println(". 1: See who's currently in the sanctuary  .");
+		System.out.println(". 2: Add a new member to the sanctuary     .");
+		System.out.println(". 3: Start the attendant's feeding round   .");
+		System.out.println(". 4: Exit the menu                         .");
+		System.out.println("............................................");
 	}
 
 	public void displayAnimalsToAdd() {
-		System.out.println("What kind of animal are you adding to the sanctuary?");
+		System.out.println("\nWhat kind of animal are you adding to the sanctuary?");
 		System.out.println("1: Cow");
 		System.out.println("2: Parrot");
 		System.out.println("3: Wolf");

@@ -19,6 +19,7 @@ public class Sanctuary {
 				System.out.println("Enclosure " + (i+1) + ": This enclosure is empty.");
 			}
 		}
+		System.out.println();
 	}
 
 	public void addAnimal(Animal animal) {
@@ -37,4 +38,5 @@ public class Sanctuary {
 		System.out.println("La de da, I love feeding my Animal Friends ...\n");
 		attendant.makeRounds(animalsInSanctuary);
 	}
+	
 }

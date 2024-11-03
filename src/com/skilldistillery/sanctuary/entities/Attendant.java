@@ -15,7 +15,7 @@ public class Attendant {
 			}
 			
 		}
-		System.out.println("\nEveryone's fed now, I can take a break.\n\n");	
+		System.out.println("\nEveryone's fed now, I can take a break.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");	
 	}
 
 }
